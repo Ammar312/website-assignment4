@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+}
+
+.space {
+    margin-bottom: 50px;
+}
+
+.first-heading {
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border-top: 4px solid black;
+    border-bottom: 2px solid black;
+    min-width: 490px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    padding: 30px;
+    font-weight: bolder;
+}
+.navbar nav ul li a:hover{
+    color: azure;
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    color: black;
+font-size: larger;
+}
+.para{
+    text-align: center;
+    
+}
+
+.cardBoxes{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cardBox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 311.17px;
+    height: auto;
+    padding: 0px 12px;
+    overflow-x: hidden;
+    color: white;
+}
+.cardBox img{
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+ .heading{
+    color: rgb(43, 33, 33);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+.btn1 button{
+    border: 0px solid transparent;
+    background-color: transparent;
+    font-size: 0.9rem;
+    color: #02080e;
+    font-weight: bold;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.btn1 button:hover{
+    color: #0067b8;
+    
+}
+/* .btn2 button{
+    border: 0px solid transparent;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #0067b8;
+} */
