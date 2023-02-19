@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: brown;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgba(240, 9, 9, 0.9), rgba(240, 9, 9, 0.5), rgba(245, 99, 99, 0.5));
 }
 
 .space {
@@ -20,7 +23,8 @@
     margin: 30px;
     border-top: 4px solid black;
     border-bottom: 2px solid black;
-    min-width: 490px;
+    /* min-width: 490px; */
+    width: 93%;
 }
 
 .navbar nav ul {
@@ -40,8 +44,12 @@
     color: black;
 font-size: larger;
 }
-.para{
-    text-align: center;
+.firstLine{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+    padding: 0px 35px;
     
 }
 
@@ -59,38 +67,62 @@ font-size: larger;
     height: auto;
     padding: 0px 12px;
     overflow-x: hidden;
-    color: white;
+    color: rgb(71, 66, 66);
 }
 .cardBox img{
     width: 100%;
     height: auto;
     border: 2px solid white;
     border-radius: 20px;
+
 }
  .heading{
     color: rgb(43, 33, 33);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline;
+    font-weight: bolder;
+    padding-left: 5px;    
 }
 .para{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.3em;
     letter-spacing: 0.05em;
     margin-bottom: 15px;
+    text-align: left;
+    padding-left: 5px
 }
 .btn1 button{
-    border: 0px solid transparent;
-    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 8px;
+    background-image:radial-gradient(rgba(255, 0, 0, 0.7), rgba(240, 236, 236, 0.712)) ;
     font-size: 0.9rem;
     color: #02080e;
     font-weight: bold;
     margin-bottom: 8px;
     cursor: pointer;
+    transition: all 0.3s ease-out;
 }
 .btn1 button:hover{
-    color: #0067b8;
+    font-size: large;
+    color: #033175;
+    background-image: linear-gradient(to right, red, white);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    background-color:whitesmoke;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: 1px solid black;
+    
+}
+.footer div{
     
 }
 /* .btn2 button{
@@ -100,3 +132,35 @@ font-size: larger;
     font-weight: bold;
     color: #0067b8;
 } */
+
+@media only screen and (max-width: 760px){
+    
+    .cardBoxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardBox{
+        width: auto;
+    }
+}
+@media only screen and (max-width: 510px){
+    .space{
+        margin-bottom: 15px;
+    }
+    .first-heading{
+        text-align: center;
+    }
+    .firstLine{
+        visibility:hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .navbar nav ul{
+        display: block;
+    }
+    .navbar nav ul li{
+        padding: 20px;
+    }
+
+
+}
